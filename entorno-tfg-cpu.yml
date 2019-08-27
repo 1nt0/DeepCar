@@ -1,0 +1,26 @@
+name: entorno-tfg-cpu
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - ipython
+  - jupyter_core
+  - matplotlib
+  - notebook
+  - opencv
+  - pandas
+  - pillow
+  - pip
+  - python=3.6.9
+  - scikit-learn
+  - flask
+  - python-socketio
+  - imgaug
+  - pip:
+    - eventlet
+    - keras
+    - markdown
+    - numpy
+    - scipy
+    - tensorflow
+prefix: C:\Users\webde\Anaconda3\envs\entorno-tfg-cpu

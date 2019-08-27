@@ -1,0 +1,26 @@
+name: entorno-tfg-gpu
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - ipython
+  - jupyter_core
+  - matplotlib
+  - notebook
+  - opencv
+  - pandas
+  - pillow
+  - pip
+  - python=3.6.9
+  - scikit-learn
+  - flask
+  - python-socketio
+  - imgaug
+  - pip:
+    - eventlet
+    - keras==2.1.6
+    - markdown
+    - numpy
+    - scipy
+    - tensorflow-gpu==1.8.0
+prefix: C:\Users\webde\Anaconda3\envs\entorno-tfg-gpu
