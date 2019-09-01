@@ -13,12 +13,12 @@ sio = socketio.Server()
 
 app = Flask(__name__)
 
-speed_max = 10
+speed_max = 20
 
 
 @sio.on('connect')
 def connect(sid, environ):
-    print('Conectado ', sid)
+    print('Conectado. sid:', sid)
     send_control(0, 0)
 
 
@@ -44,11 +44,11 @@ def send_control(steering_angle, throttle):
         'throttle': throttle.__str__()
     })
  
+
  
 if __name__ == '__main__':
-
     model = load_model('modelo.h5')
 
     app = socketio.Middleware(sio, app)
     eventlet.wsgi.server(eventlet.listen(('', 4567)), app)
-
+    
