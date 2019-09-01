@@ -16,14 +16,14 @@ max_muestras_por_bin = 300  #Usado para eliminar los elementos del histograma cu
 train_size = 0.8            #Porcentaje del tamaño que va a tener el subconjunto de entrenamiento al dividir el dataset
 
 #ENTRENAMIENTO
-red = 'lenet5'              #Red con la que entrenar el dataset. Los valores son 'nvidia' o 'lenet5'
+red = 'nvidia'              #Red con la que entrenar el dataset. Los valores son 'nvidia' o 'lenet5'
 epochs = 10                 #Número de épocas de entrenamiento
 training_batch_size = 100   #Número de imágenes de entrenamiento generadas por cada "step"
 steps_per_epoch = 300       #Número de steps por cada época
 validation_batch_size = 100 #Número de imágenes de validación generadas por cada "step"
 validation_steps = 200      #Número de steps de validación
 
-nombre_modelo_exportado = 'aver.h5'   #Debe tener la extensión .h5 y se guardará en la misma carpeta que este fichero
+nombre_modelo_exportado = 'modelo.h5'   #Debe tener la extensión .h5 y se guardará en la misma carpeta que este fichero
 #---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
     print("-----------")
     print("2- Renombrado de la ruta de las imágenes....")
     try:
-        renombra_imagenes(datos)
+        datos = renombra_imagenes(datos)
     except:
         print("Error renombrando la ruta de las imágenes")
         sys.exit()
