@@ -18,9 +18,8 @@ dependencies:
   - imgaug
   - pip:
     - eventlet
-    - keras
+    - keras==2.1.6
     - markdown
-    - numpy
     - scipy
-    - tensorflow
+    - tensorflow==1.8.0
 prefix: C:\Users\webde\Anaconda3\envs\entorno-tfg-cpu

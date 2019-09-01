@@ -20,7 +20,6 @@ dependencies:
     - eventlet
     - keras==2.1.6
     - markdown
-    - numpy
     - scipy
     - tensorflow-gpu==1.8.0
 prefix: C:\Users\webde\Anaconda3\envs\entorno-tfg-gpu
