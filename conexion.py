@@ -27,7 +27,7 @@ def telemetry(sid, data):
     speed = float(data['speed'])
     image = Image.open(BytesIO(base64.b64decode(data['image'])))
     image = np.asarray(image)
-    image = img_preproceso_nvidia(image) #Cambiar en función del modelo usado
+    image = img_preproceso_nvidia(image) #Cambiar en función del modelo usado: img_preproceso_nvidia o img_preproceso_lenet5
     image = np.array([image])
     steering_angle = float(model.predict(image))
 
