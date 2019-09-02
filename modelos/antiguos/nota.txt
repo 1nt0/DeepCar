@@ -1,0 +1,1 @@
+Estos modelos fueron creados con una versión de Keras superior, y daban resultados ligeramente diferentes, sobre todo a favor de LeNet-5. Por problemas de compatibilidad y numerosos fallos continuos, tuve que cambiar a una versión inferior, que es la que se usa en los entornos virtuales, y ésta no es capaz de leer estos modelos.
