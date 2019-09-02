@@ -19,7 +19,7 @@ def lectura_csv():
     
 
 #Generación del histograma con la frecuencia de los ángulos
-def generar_histograma(datos, num_bins):
+def genera_histograma(datos, num_bins):
     hist, bins = np.histogram(datos['angulo'], num_bins)
     
     return bins

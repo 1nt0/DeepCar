@@ -1,4 +1,4 @@
-from lectura_datos import lectura_csv, generar_histograma, get_imgs_y_angulos
+from lectura_datos import lectura_csv, genera_histograma, get_imgs_y_angulos
 from preprocesamiento_datos import renombra_imagenes, balancea_dataset, divide_dataset
 from redes import modelo_lenet5, modelo_nvidia
 from entrenamiento import entrena_modelo
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     print("-----------")
     print("3- Generación del histograma....")
     try:
-        bins = generar_histograma(datos, num_bins)
+        bins = genera_histograma(datos, num_bins)
     except:
         print("Error generando el histograma.")
         sys.exit()

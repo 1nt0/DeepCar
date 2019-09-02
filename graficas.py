@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Dibujado del histograma de un dataframe de Pandas
-def dibujar_histograma(datos, num_bins, max_muestras_por_bin):
+def dibuja_histograma(datos, num_bins, max_muestras_por_bin):
     plt.hist(datos['angulo'], num_bins)
 
     plt.xlabel('Ángulo')
